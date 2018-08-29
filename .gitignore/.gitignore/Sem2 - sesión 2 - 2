@@ -1,0 +1,33 @@
+Laboratorio – Sesión 2
+Ejercicio 2
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int G1, M1, S1, G2, M2, S2, RG, RM, RS;
+
+    cout << "Ingrese el valor para el ángulo 1: " << "\n";
+    cout << "G1: "; cin >> G1;
+    cout << "M1: "; cin >> M1;
+    cout << "S1: "; cin >> S1;
+    cout << "\n" << "\n";
+    cout << "Ingrese el valor para el ángulo 2: " << "\n";
+    cout << "G2: "; cin >> G2;
+    cout << "M2: "; cin >> M2;
+    cout << "S2: "; cin >> S2;
+    cout << "\n" << "\n";
+
+    RS = S1 + S2;
+    RM = (RS>60)+(M1+M2);
+    RG = (RM>60)+(G1+G2);
+
+    cout << G1 << "  " << M1 << "  " << S1 << "\n";
+    cout << G2 << "  " << M2 << "  " << S2 << "\n";
+    cout << "-------------------" << "\n";
+    cout << RG << "  " << RM << "  " << RS << "\n";
+
+    return 0;
+}
